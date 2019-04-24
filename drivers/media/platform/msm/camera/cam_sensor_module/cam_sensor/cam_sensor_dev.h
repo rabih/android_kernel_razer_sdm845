@@ -32,7 +32,8 @@
 #include <cam_subdev.h>
 #include <cam_sensor_io.h>
 #include "cam_debug_util.h"
-#include "cam_context.h"
+#include "../../cam_core/cam_context.h"
+
 
 #define NUM_MASTERS 2
 #define NUM_QUEUES 2

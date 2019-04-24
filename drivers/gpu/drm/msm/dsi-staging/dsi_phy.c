@@ -880,7 +880,7 @@ int dsi_phy_update_phy_timings(struct msm_dsi_phy *phy,
 	memcpy(&phy->mode, &config->video_timing, sizeof(phy->mode));
 	rc = phy->hw.ops.calculate_timing_params(&phy->hw, &phy->mode,
 						 &config->common_config,
-						 &phy->cfg.timing, true);
+						 &phy->cfg.timing);
 	if (rc)
 		pr_err("failed to calculate phy timings %d\n", rc);
 	else
